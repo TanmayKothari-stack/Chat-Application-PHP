@@ -1,0 +1,195 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background: white;
+}
+.heading
+{
+	width: 100%;
+	height: 50px;
+	border: 0px solid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background: orangered;
+	box-shadow: 2px 2px 3px 2px black;
+	z-index: 1000;
+}
+.navigation
+{
+	border: 0px solid;
+	width: 20%;
+	height: 100vh;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	background: black;
+	transition: 0.5s ease;
+
+}
+.navigation .content
+{
+	border: 0px solid red;
+	width: 95%;
+	height: 100%;
+	text-align: center;
+	padding: 10px;
+}
+.navigation .content ul
+{
+	list-style-type: none;
+	padding: 10px 0;
+}
+.navigation .content ul li
+{
+	padding: 2rem 0;
+}
+.navigation .content ul li a
+{
+	color: white;
+	text-decoration: none;
+}
+.navigation .content ul li i
+{
+	color: white;
+	margin: 0 10px;
+}
+
+
+.container
+{
+	border: 0px solid ;
+	width: 80%;
+	height: 100%;
+	margin-top: 10px;
+	position: relative;
+	left: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container .content 
+{
+	border: 0px solid blue;
+	width: 95%;
+	height: 90%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+	grid-column-gap: 0px;
+	grid-row-gap: 50px;
+	margin-top: 50px;
+	
+}
+.container .content div
+{
+	border: 0px solid green;
+	width: 200px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px 1px black;
+	color: white;
+	margin-left: 55px;
+}
+.container .content h2
+{
+	position: absolute;
+	border: 0px solid;
+	top: 2%;
+	left: 35%;
+}
+
+
+/*Media Query*/
+
+@media(max-width:768px)
+{
+	
+	body
+	{
+		overflow-x: hidden;
+	}
+	.navigation
+	{
+		width: 0%;
+		transition: 0.5s ease;
+	}
+	.navigation .content ul li a
+	{
+		font-size: 10px;
+	}
+
+	.navigation.active
+	{
+		width: 50%;
+		display: block;
+		z-index: 2000;
+		transition: 0.5s ease;
+	}
+
+		.menu
+	{
+		width: 30px;
+		height: 30px;
+		border: 0px solid green;
+		position: absolute;
+		top: 70px;
+		left: 5%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		transform: rotate(90deg);
+		cursor: pointer;
+		z-index: 1000;
+		transition: 0.5s ease;
+	}
+	.menu span
+	{
+		border: 1px solid;
+		height: 20px;
+	}
+
+
+	.menu.active
+	{
+		left: 90%;
+		transform: rotate(180deg);
+	}
+	
+
+	.container
+	{
+		width: 100%;
+		left: 0;
+		border: 0px solid;
+	}
+	.container .content
+	{
+		display: block;
+	}
+	.container .content h2
+	{
+		width: auto;
+		border: 0px solid;
+		left: 35%;
+	}
+
+	.container .content div
+	{
+		margin-bottom: 50px;
+		position: relative;
+		left: 10%;
+	}
+
+}
+
+
+/**/

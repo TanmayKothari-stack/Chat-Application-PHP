@@ -1,0 +1,269 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background: white;
+}
+.heading
+{
+	width: 100%;
+	height: 50px;
+	border: 0px solid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background: orangered;
+	box-shadow: 2px 2px 3px 2px black;
+	z-index: 1000;
+}
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background: white;
+}
+.heading
+{
+	width: 100%;
+	height: 50px;
+	border: 0px solid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background: orangered;
+	box-shadow: 2px 2px 3px 2px black;
+	z-index: 1000;
+}
+.navigation
+{
+	border: 0px solid;
+	width: 20%;
+	height: 100vh;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	background: black;
+	transition: 0.5s ease;
+
+}
+.navigation .content
+{
+	border: 0px solid red;
+	width: 95%;
+	height: 100%;
+	text-align: center;
+	padding: 10px;
+}
+.navigation .content ul
+{
+	list-style-type: none;
+	padding: 10px 0;
+}
+.navigation .content ul li
+{
+	padding: 2rem 0;
+}
+.navigation .content ul li a
+{
+	color: white;
+	text-decoration: none;
+}
+.navigation .content ul li i
+{
+	color: white;
+	margin: 0 10px;
+}
+
+
+.container
+{
+	border: 0px solid red;
+	width: 80%;
+	height: 100%;
+	margin-top: 10px;
+	position: relative;
+	left: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container form
+{
+	border: 0px solid green;
+	width: 90%;
+	height: 570px;
+	box-shadow: 2px 2px 3px 1px black;
+	padding: 0 20px;
+	border-radius: 5px;
+}
+
+.container form .photo
+{
+	width: 100px;
+	height: 100px;
+	border: 2px solid;
+	margin-left: 20px;
+	position: relative;
+	top: -40px;
+	transform: translateX(400px);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container form .photo i
+{
+	font-size: 100px;
+}
+
+
+.container form .user-data
+{
+	position: relative;
+	top: -30px;
+}
+.container form .user-data label
+{
+	padding: 20px 0;
+}
+
+
+.container form input
+{
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	margin: 7px 0;
+	border-radius: 5px;
+}
+
+.container form input[type="submit"]
+{
+	cursor: pointer;
+	background: orangered;
+	color: white;
+	border-radius: 5px;
+	border: none;
+}
+
+.container form input[type="submit"]:hover
+{
+	background: mediumspringgreen;
+	color: white;
+}
+
+/*Media Query*/
+
+@media(max-width:768px)
+{
+	
+	body
+	{
+		overflow-x: hidden;
+	}
+	.navigation
+	{
+		width: 0%;
+		transition: 0.5s ease;
+	}
+	.navigation .content ul li a
+	{
+		font-size: 10px;
+	}
+
+	.navigation.active
+	{
+		width: 50%;
+		display: block;
+		z-index: 2000;
+		transition: 0.5s ease;
+	}
+
+	.menu
+	{
+		width: 30px;
+		height: 30px;
+		border: 0px solid green;
+		position: absolute;
+		top: 70px;
+		left: 5%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		transform: rotate(90deg);
+		cursor: pointer;
+		z-index: 1000;
+		transition: 0.5s ease;
+	}
+	.menu span
+	{
+		border: 1px solid;
+		height: 20px;
+	}
+
+
+	.menu.active
+	{
+		left: 90%;
+		transform: rotate(180deg);
+	}
+	
+
+	.container
+	{
+		width: 100%;
+		left: 0;
+		border: 0px solid;
+	}
+
+.container form
+{
+	border: 0px solid green;
+	width: 80%;
+	height: 600px;
+	box-shadow: 2px 2px 3px 1px black;
+	padding: 0 20px;
+	font-size: 15px;
+}
+
+.container form h2
+{
+	padding: 10px;
+}
+
+.container form .user-data label
+{
+	padding: 20px 0;
+}
+
+
+.container form .photo
+{
+	width: 100px;
+	height: 100px;
+	border: 2px solid;
+	margin-left: 20px;
+	transform: translateX(80px);
+	margin-top: 20px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+}
+
+
+/**/

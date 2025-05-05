@@ -1,0 +1,8 @@
+host = sql310.infinityfree.com
+user = if0_36203147
+database = if0_36200147_chatsite
+password = WVL0BVpRFP6na
+
+webdomin = webchatiing.wauze.com
+webusername = if0_36203147
+webpasssword = WVL0BVpRFP6na

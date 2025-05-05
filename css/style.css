@@ -1,0 +1,495 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+a
+{
+	color: black;
+}
+
+body
+{
+	
+}
+
+header
+{
+	border: 0px solid;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	top: 0px;
+	height: 50px;
+	justify-content: center;
+	z-index: 1000;
+	font-family: monospace;
+	background: white;
+	padding: 30px 0;
+	box-shadow: 2px 2px 3px 1px black;
+}
+
+header ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	background: transparent;
+	width: 100%;
+	padding: 10px 0;
+
+}
+header ul li
+{
+	padding: 10px 5%;
+	cursor: pointer;
+	border-radius: 10px;
+	color: black;
+	font-size: 15px;
+}
+header ul button
+{
+	background: transparent;
+	border: 1px solid black;
+	margin-left: 20px;
+	width: 100px;
+	border-radius: 5px;
+	color: black;
+	cursor: pointer;
+	font-family: monospace;
+}
+header ul button:hover
+{
+	background: #5453a6;
+	color: white;
+}
+header ul button:hover > a
+{
+	color: white;
+}
+header ul li:hover
+{
+	background: #5453a6;
+	color: white;
+}
+
+header ul li:hover > a
+{
+color: white;
+}
+
+
+section.banner
+{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	border: 0px solid green;
+	align-items: center;
+	justify-content: center;
+	background: url("../images/background.png") no-repeat /*rgba(0, 0, 0, 0.6)*/;
+	nbackground-blend-mode: darken;
+	background-position: center;
+	background-size: cover;
+
+}
+
+header .content
+{
+	width: 100px;
+	height: 100vh;
+	border: 0px solid white;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	display: flex;
+	justify-content: center;
+	background: white;
+	left: -110%;
+	transition: .5s;
+
+}
+header .content ul
+{
+	display: block;
+	text-align: center;
+	width: 80%;
+}
+header .content ul li
+{
+	margin: 50px 0;
+}
+header .content button
+{
+	height: 30px;
+	width: 80px;
+	position: absolute;
+	top: 35%;
+	background: red;
+	border: 1px solid black;
+	font-family: monospace;
+	border-radius: 5px;
+	color: black;
+	cursor: pointer;
+	margin-left: 10px;
+}
+header .content button:hover
+{
+	background: #5453a6;
+}
+
+
+section.banner content
+{
+	margin-top: 5%;
+}
+section.banner content img
+{
+	width: 100%;
+}
+section.banner content h2
+{
+	font-size: 35px;
+	color: white;
+}
+
+section.banner content button
+{
+	width:100px; 
+	height: 30px; 
+	cursor: pointer; 
+	background: transparent; 
+	border: 1px solid black; 
+	color: black; 
+	border-radius: 5px;
+	position: relative;
+	left: 40%;
+	margin-top: 20px;
+}
+
+section.banner content button:hover
+{
+	background: #5453a6;
+	color: white;
+}
+
+section.banner content button:hover > a
+{
+	color: white;
+}
+
+section.features
+{
+	border: 0px solid green;
+	display: flex;
+	justify-content: center;
+}
+
+section.features content
+{
+	display: flex;
+	width: 90%;
+	height: fit-content;
+	border: 0px solid;
+	justify-content: space-around;
+	margin: 20px 0;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px 1px black;
+	
+}
+section.features content ol
+{
+	position: relative;
+	margin-top: 30px;
+	margin-left: 50px;
+	font-family: fantasy;
+}
+
+
+section.features content ol li
+{
+	padding: 15px 0;
+}
+
+
+section.about
+{
+	display: flex;
+	justify-content: center;
+	border: 0px;
+}
+
+
+section.about div
+{
+	border: 0px solid green;
+	width: 90%;
+	height: fit-content;
+	margin: 20px 0;
+	border-radius: 10px;
+	display: flex;
+	box-shadow: 2px 2px 3px 1px black;
+}
+
+section.about div h2
+{
+	position:absolute;
+	left: 55%; 
+	margin: 10px 0;
+	z-index: 10000;
+}
+
+section.about div p
+{
+	margin-top: 50px;
+	margin: 50px 0px 20px 20px;
+	padding-right: 10px;
+	font-family: sans-serif;
+}
+
+footer
+{
+	width: 100%;
+	height: 300px;
+	border: 0px solid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer .content
+{
+	width: 90%;
+	height: fit-content;
+	border: 0px solid green;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px 1px black;
+	padding: 20px 0;
+	padding-top: 50px;
+}
+
+footer .content h2
+{
+	position: absolute; 
+	margin-bottom: 260px; 
+	left: 50%;
+}
+
+footer .content div
+{
+	border: 0px solid red;
+	width: 250px;
+	height: 215px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px 1px #ccc;
+
+}
+
+footer .content .feedback form input,textarea
+{
+	margin: 7px 0;
+	width: 150px;
+	outline: none;
+}
+footer .content .feedback form textarea
+{
+	margin-left: 45px;
+	padding: 10px;
+	height: 40px;
+}
+
+footer .content .feedback form input[type="submit"]
+{
+	cursor: pointer;
+	padding: 2px 1px;
+	margin-left: 40px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	background-image: linear-gradient(red,blue,green);
+}
+
+/*Media Query*/
+
+@media(max-width:768px)
+{
+	header
+	{
+		background: transparent;
+		box-shadow: none;
+	}
+
+	header ul
+	{
+		display: none;
+	}
+
+	section.banner 
+	{
+		height: 300px;
+	}
+
+	section.banner content h2
+{
+	font-size: 25px;
+	color: white;
+}
+
+	
+
+	
+.menu
+{
+	width: 30px;
+	height: 30px;
+	border: 0px solid white;
+	position: absolute;
+	left: 5%;
+	display: block;
+	text-align: center;
+	padding-top: 0.5%;
+	cursor: pointer;
+	transform: rotate(90deg);
+	transition: .5s;
+
+}
+.menu span
+{
+	margin: 3px;
+	border: 1px solid black;
+}
+header .content
+{
+	width: 100px;
+	height: 250px;
+	border: 0px solid white;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	display: flex;
+	justify-content: center;
+	background: white;
+	left: -110%;
+	transition: .5s;
+	box-shadow: 2px 2px 3px 2px black;
+	margin: 10px;
+	border-radius: 10px;
+
+}
+header .content ul
+{
+	display: block;
+	text-align: center;
+	width: 80%;
+}
+header .content ul li
+{
+	margin: 15px 0;
+}
+header .content button
+{
+	height: 30px;
+	width: 80px;
+	position: absolute;
+	top: 80%;
+	background: transparent;
+	border: 1px solid black;
+	font-family: monospace;
+	border-radius: 5px;
+	color: black;
+	cursor: pointer;
+	margin-left: 10px;
+}
+header .content button:hover
+{
+	background: #5453a6;
+	color: white;
+}
+
+.menu.active
+{
+	left: 120px;
+	transform: rotate(180deg);
+	transition: .5s;
+}
+header .content.active
+{
+	left: 0%;
+	transition: .5s;
+}
+
+section.features content img
+{
+	display: none;
+}
+
+section.features content
+{
+	background: url("../images/features.png");
+	background-position: center;
+	background-size: cover;
+}
+section.about div h2
+{
+	left: 40%;
+}
+section.about div img
+{
+	display: none;
+}
+section.about div
+{
+	width:90%; 
+	height: fit-content; 
+	border: 0px solid red; 
+	background-image: url('../images/about.png'); 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	color: white;
+	text-shadow: 3px 3px 4px black;
+}
+
+footer
+{
+	width: 100%;
+	height: 100%;
+	border: none;
+	
+}
+
+footer .content
+{
+	display: block;
+	width: 90%
+	justify-content: center;
+}
+footer .content h2
+{
+	position: relative;
+	margin-bottom: 0px;
+	top: -20px;
+	left: 35%;
+}
+footer .content div
+{
+	margin: 10% 0;
+	margin-left: 12%;
+}
+
+footer .content .location iframe
+{
+	width: 95%;
+	height: 95%;
+}
+
+
+
+}
+
